@@ -43,7 +43,7 @@ print(
 )
 print(
     f'Список слов, имеющих больше или ровно'
-    f' {q} отверстий:', *wordwthhole(lstline, q)
+    f' {q} отверстий:', wordwthhole(lstline, q)
 )
 
 
