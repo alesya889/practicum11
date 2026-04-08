@@ -6,7 +6,7 @@ list1 = line1.split(' ')
 list2 = line2.split(' ')
 list12 = []
 
-for ind in range(num1 - 1, num2 + 1):
+for ind in range(num1 - 1, num2):
     list12.append(list1[ind])
 
 for el in list12[::-1]:
@@ -15,6 +15,15 @@ for el in list12[::-1]:
 for el in list12:
     list1.remove(el)
 
-print(*list1)
-print(*list2)
+intlst1 = []
+intlst2 = []
+
+for _ in list1:
+    intlst1.append(int(_))
+
+for _ in list2:
+    intlst2.append(int(_))
+
+print(intlst1)
+print(intlst2)
 
